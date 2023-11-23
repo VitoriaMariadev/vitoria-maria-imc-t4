@@ -1,3 +1,5 @@
+let tempo = 4000;
+
 const mudarElementoUm = () => {
     const pegarDiv = document.getElementById("banner").innerHTML = '<img src="./Images/img1.jpg" alt=""> <div class="main-inicio-banner-texto"> <h1>Alimentação Saudável</h1> <p>Comer conscientemente, priorizando alimentos nutritivos, é a chave para uma boa saúde.</p> </div>'
     document.getElementById("img1").style.cssText =
@@ -8,6 +10,7 @@ const mudarElementoUm = () => {
     'filter: brightness(100%)'
     document.getElementById("img4").style.cssText =
     'filter: brightness(100%)'
+    tempo = 4000;
 }
 
 const mudarElementoDois = () => {
@@ -20,6 +23,7 @@ const mudarElementoDois = () => {
     'filter: brightness(100%)'
     document.getElementById("img4").style.cssText =
     'filter: brightness(100%)'
+    tempo = 4000;
 }
 
 const mudarElementoTres = () => {
@@ -32,6 +36,7 @@ const mudarElementoTres = () => {
     'filter: brightness(40%)'
     document.getElementById("img4").style.cssText =
     'filter: brightness(100%)'
+    tempo = 4000;
 }
 
 const mudarElementoQuatro = () => {
@@ -44,6 +49,7 @@ const mudarElementoQuatro = () => {
     'filter: brightness(100%)'
     document.getElementById("img4").style.cssText =
     'filter: brightness(40%)'
+    tempo = 4000;
 }
 
 function chamarFuncoes() {
@@ -55,7 +61,7 @@ function chamarFuncoes() {
       currentIndex = (currentIndex + 1) % funcoes.length;
     }
 
-    setInterval(chamarProximaFuncao, 4000); // Chama a próxima função a cada 6 segundos
+    setInterval(chamarProximaFuncao, tempo); // Chama a próxima função a cada 6 segundos
   }
 
 chamarFuncoes()
