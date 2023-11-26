@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imc</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/calcImcStyle.css">
+    <script src="../Js/index.js"></script>
 </head>
 <body>
     <header>
@@ -26,14 +28,49 @@
         </div>
     </header>
 
-    <select class="main-calcimc">
+    <section class="main-calcimc">
         <div class="main-calcimc-titulo">
             <h1>Calculadora IMC</h1>
         </div>
 
         <div class="main-calc-container">
-            <div class="main-calccontainer-esquerdo"></div>
+            <div class="main-calccontainer-esquerdo">
+                <div class="main-calccontainer-esquerdo-dados" id="dados">
+
+                </div>
+            </div>
+
+            <div class="main-calccontainer-direito">
+                <div class="main-calccontainer-direito-formulario">
+                    <div class="main-calccontainer-direito-formulario-resultado" id="resultado">
+                        <h2>Aqui tá o resultado :P</h2>
+                    </div>
+
+                    <div class="main-calccontainer-direito-formulario-input">
+                        <div class="main-calccontainer-direito-formulario-dados idade">
+                            <p>Idade</p>
+                            <input type="text" id="idade">
+                        </div>
+    
+                        <div class="main-calccontainer-direito-formulario-dados peso">
+                            <p>Peso</p>
+                            <input type="text" id="peso" placeholder="00.00">
+                        </div>
+    
+                        <div class="main-calccontainer-direito-formulario-dados altura">
+                            <p>Altura</p>
+                            <input type="text" id="altura" placeholder="00.00">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="main-calccontainer-direito-btn">
+                    <button onclick="calcularImc()" >Calcular</button>
+                </div>
+            </div>
         </div>
-    </select>
+    </section>
 </body>
 </html>
+
