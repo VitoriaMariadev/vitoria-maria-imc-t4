@@ -1,0 +1,74 @@
+.main-dicas{
+    width: 100%;
+    height: 90vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-dicas-titulo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-dicas-titulo > h1{
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.main-dicas-titulo::before{
+    content: '';
+    position: absolute;
+    height: 65%;
+    width: 15%;
+    left: 45%;
+    background-color: rgba(245, 99, 74, 0.60);
+    z-index: 1;
+}
+
+.alimentacao::before{
+    width: 25%;
+}
+
+.main-dicas-container{
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+
+.main-dicas-container-img{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-dicas-container-img > img{
+    width: 55%;
+}
+
+.atividade-img > img{
+    width: 85%;
+}
+
+.main-dicas-container-texto{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-dicas-container-texto > p{
+    width: 70%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
